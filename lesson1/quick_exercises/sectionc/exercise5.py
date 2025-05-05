@@ -4,7 +4,7 @@ Create a Python script that does the following:
 a. Prompts a user for a first_name and a last_name.
 b. Use an f-string to print out these names.
 c. Print out the names using an f-string with columns 30 wide and the names right aligned.
-d. Print out the names using an f-string with columns 30 wide and the names center aligned. 
+d. Print out the names using an f-string with columns 30 wide and the names center aligned.
 e. Print out the first name variable and value using an f-string and the '{f_name = }' technique.
 
 Example running script:
@@ -46,4 +46,3 @@ print(f"{first_name:^30} {last_name:^30}")
 
 print("\n### Part 'e' ({var = } technique): ")
 print(f"{first_name = }")
-
