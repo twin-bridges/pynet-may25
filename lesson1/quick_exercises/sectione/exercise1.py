@@ -23,6 +23,8 @@ print(f"\nEx1a:\n\n{data}\n\n")
 
 
 # Part "b" ####
+# See video5 on File Context Managers for reference (you could also just .open() and
+# .close() the file, as done in part 'a').
 
 # Using a context manager
 with open("some_file.txt") as f:

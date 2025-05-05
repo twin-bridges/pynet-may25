@@ -20,6 +20,8 @@ some text
 
 """
 
+# See video5 on 'File Context Managers' for reference (you could also just .open() and
+# .close() the file, as done in part 'a').
 file_name = "test_file.txt"
 data = "some text\n"
 with open(file_name, mode="w") as f:
