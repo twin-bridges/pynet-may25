@@ -30,15 +30,15 @@ Answer:
    method.
 
 
-### c. What is the name/meaning of variables that start and end with double underscore like: __name__?
+### c. What is the name/meaning of variables that start and end with double underscore like: `__name__`?
 
    Dunder variables or magic methods are basically special variables or methods in Python 
    that have internal special meaning to Python. 
 
-   For example, __init__ in a "class" context is the special method that gets automatically 
+   For example, `__init__` in a "class" context is the special method that gets automatically 
    called to initialize an object.
 
-   Or as a second example, __str__ in a class context is a method that is automatically used
+   Or as a second example, `__str__` in a class context is a method that is automatically used
    when someone tries to print() the given object (i.e. the informal string representation
    of an object).
 
