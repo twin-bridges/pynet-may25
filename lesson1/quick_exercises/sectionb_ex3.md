@@ -10,8 +10,7 @@ In [1]: print("hello world")
 hello world
 ```
 
-### b. In the REPL, use "input" to prompt for your name. Save this to a variable and then 
-###    print it out.
+### b. In the REPL, use "input" to prompt for your name. Save this to a variable and then print it out.
 
 ```python
 In [2]: name = input("Enter your name: ")
