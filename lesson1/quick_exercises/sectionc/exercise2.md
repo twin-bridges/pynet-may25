@@ -4,7 +4,7 @@
 In [10]: name = "Jerome Morrow"
 ```
 
-### b. Use the .capitalize() method to convert the string to all upper case.
+### b. Use the .upper() method to convert the string to all upper case.
 
 ```python
 In [12]: name.upper()
