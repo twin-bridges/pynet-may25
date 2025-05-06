@@ -7,7 +7,7 @@ data_centers = [
     ["la1", "10.100.32.0/20"],
 ]
 
-In this script, use an f-string to print out the Los Angeles data center name and its IP
+In this script use an f-string to print out the Los Angeles data center name and its IP
 prefix.
 
 """
