@@ -13,9 +13,11 @@ def my_func():
     print("Hello")
     print("World")
     print("And Something Else.\n")
+    return 42
 
 
 # Part b. (actually call the function three times)
 my_func()
 my_func()
-my_func()
+# Save the return value(42) in this last call (don't do anything with it).
+ret_val = my_func()
