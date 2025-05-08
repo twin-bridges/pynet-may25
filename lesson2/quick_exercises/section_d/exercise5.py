@@ -10,7 +10,13 @@ def read_file(file_name, file_path=current_dir):
             return f.read()
 
 
-data = read_file(file_name="local.ini")
+# Test reading using defaults
+# data = read_file(file_name="local.ini")
+
+# Test reading using a constructed path
+home_dir = Path.home()
+test_path = home_dir / Path("pynet-may25/lesson2/quick_exercises/section_d")
+data = read_file(file_name="local.ini", file_path=test_path)
 print()
 print("File Contents:")
 print("-" * 40)
