@@ -13,14 +13,13 @@ def my_func(x, y, z):
     print(f"{y = }")
     print(f"{z = }")
 
-
 my_args = [7, 8, 42]
 
-# Call with positional arguments except using *args
-print("\nFunc call: 'my_func(*args)':")
+# Call with positional arguments except using *args technique
+print("\nFunc call: 'my_func(*my_args)':")
 my_func(*my_args)
 
 # Also works if my_args is a tuple:
 my_args = (7, 8, 99)
-print("\nFunc call: 'my_func(*args)': (tuple)")
+print("\nFunc call: 'my_func(*my_args)': (tuple)")
 my_func(*my_args)
