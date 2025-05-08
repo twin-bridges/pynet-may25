@@ -13,6 +13,7 @@ def my_func(x, y, z):
     print(f"{y = }")
     print(f"{z = }")
 
+
 my_args = [7, 8, 42]
 
 # Call with positional arguments except using *args technique

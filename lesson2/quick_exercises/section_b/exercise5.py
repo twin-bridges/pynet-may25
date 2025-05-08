@@ -2,23 +2,24 @@
 In a Python script create the following dictionary of dictionaries:
 
 data_centers = {
-    "sf1": {
-        "address": "200 Paul St.",
-        "network_prefix": "172.20.0.0/20",
-        "site_contact": "john.doe@gmail.com",
-    },
-    "la1": {
-        "address": "1 Wilshire Blvd.",
-        "network_prefix": "172.21.0.0/20",
-        "site_contact": "jane.smith@gmail.com",
-    },
+    "sf1": {
+        "address": "200 Paul St.",
+        "network_prefix": "172.20.0.0/20",
+        "site_contact": "john.doe@gmail.com",
+    },
+    "la1": {
+        "address": "1 Wilshire Blvd.",
+        "network_prefix": "172.21.0.0/20",
+        "site_contact": "jane.smith@gmail.com",
+    },
 }
 
 Given the above:
 a. Print out the inner-dictionary that is associated with the "sf1" key.
 b. Print out the "address" of the "sf1" data center.
-c. Loop over the data_centers dictionary and print out the data_center name and its 
+c. Loop over the data_centers dictionary and print out the data_center name and its
    "network_prefix"
+
 """
 from rich import print
 
