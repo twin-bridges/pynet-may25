@@ -1,9 +1,12 @@
 ### Look at the data structure
+
+```python
 In [3]: data
 Out[3]: 
 {'nokia-conf:configure': {'card': [{'slot-number': 1,
     'mda': [{'mda-slot': 1, 'mda-type': 's36-100gb-qsfp28'}],
     'fp': [{'fp-number': 1}, {'fp-number': 2}]}]}}
+```
 
 ### Determine it is a dictionary
 In [4]: type(data)
