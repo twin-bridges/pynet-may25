@@ -1,0 +1,10 @@
+device_name,device_type,host,username,password,port,global_delay_factor
+cisco3,cisco_ios,cisco3.invalid.com,admin,cisco123,,
+cisco4,cisco_ios,cisco4.invalid.com,admin,cisco123,,
+arista1,arista_eos,arista1.invalid.com,admin,arista123,,2
+arista2,arista_eos,arista2.invalid.com,admin,arista123,,2
+arista3,arista_eos,arista3.invalid.com,admin,arista123,,2
+arista4,arista_eos,arista4.invalid.com,admin,arista123,,2
+srx2,juniper_junos,srx2.invalid.com,admin,juniper123,,
+nxos1,cisco_nxos,nxos1.invalid.com,admin,cisco123,8022,
+nxos2,cisco_nxos,nxos2.invalid.com,admin,cisco123,8022,
