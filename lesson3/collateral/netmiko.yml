@@ -1,0 +1,60 @@
+---
+cisco3:
+  device_type: cisco_ios
+  host: cisco3.invalid.com
+  username: admin
+  password: invalid
+
+cisco4:
+  device_type: cisco_ios
+  host: cisco4.invalid.com
+  username: admin
+  password: invalid
+
+arista1:
+  device_type: arista_eos
+  host: arista1.invalid.com
+  username: admin
+  password: invalid
+  global_delay_factor: 1
+
+arista2:
+  device_type: arista_eos
+  host: arista2.invalid.com
+  username: admin
+  password: invalid
+  global_delay_factor: 1
+
+arista3:
+  device_type: arista_eos
+  host: arista3.invalid.com
+  username: admin
+  password: invalid
+  global_delay_factor: 1
+
+arista4:
+  device_type: arista_eos
+  host: arista4.invalid.com
+  username: admin
+  password: invalid
+  global_delay_factor: 1
+
+srx2:
+  device_type: juniper_junos
+  host: srx2.invalid.com
+  username: admin
+  password: invalid
+
+nxos1:
+  device_type: cisco_nxos
+  host: nxos1.invalid.com
+  username: admin
+  password: invalid
+  port: 22
+
+nxos2:
+  device_type: cisco_nxos
+  host: nxos2.invalid.com
+  username: admin
+  password: invalid
+  port: 22
