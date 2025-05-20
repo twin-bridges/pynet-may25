@@ -92,7 +92,6 @@ In [14]: modules = modules[0]
 ### Look at new variable; determine its type (dictionary)
 
 ```python
-In [13]: len(modules)
 In [15]: type(modules)
 Out[15]: dict
 ```
