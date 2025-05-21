@@ -1,7 +1,7 @@
 ### Inspect sys.path using 'python' REPL 
 ### Comments added by ktbyers
 
-```
+```python
 >>> from rich import print
 >>> import sys
 >>> print(sys.path)
