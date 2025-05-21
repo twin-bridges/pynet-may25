@@ -17,6 +17,8 @@ if __name__ == "__main__":
     if token:
         http_headers["authorization"] = "Token {}".format(token)
 
+    # verify=False (self-signed SSL certificate) - this is insecure/not appropriate
+    # for production use.
     response = requests.get(url, headers=http_headers, verify=False)
     response = response.json()
 

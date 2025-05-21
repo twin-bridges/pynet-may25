@@ -14,6 +14,9 @@ if __name__ == "__main__":
     url = "https://netbox.lasthop.io/api/dcim/"
     # url = "https://api.github.com/"
     http_headers = {"accept": "application/json"}
+
+    # verify=False (self-signed SSL certificate) - this is insecure/not appropriate
+    # for production use.
     response = requests.get(url, headers=http_headers, verify=False)
     response = response.json()
 

@@ -18,6 +18,9 @@ def find_device_id():
     http_headers = {"accept": "application/json"}
     if token:
         http_headers["authorization"] = "Token {}".format(token)
+
+    # verify=False (self-signed SSL certificate) - this is insecure/not appropriate
+    # for production use.
     response = requests.get(url, headers=http_headers, verify=False)
     response = response.json()
     for device_entry in response["results"]:
@@ -42,6 +45,8 @@ if __name__ == "__main__":
         "authorization": "Token {}".format(token),
     }
 
+    # verify=False (self-signed SSL certificate) - this is insecure/not appropriate
+    # for production use.
     response = requests.delete(url, headers=http_headers, verify=False)
 
     if response.ok:
