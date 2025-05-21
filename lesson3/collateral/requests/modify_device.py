@@ -18,6 +18,9 @@ if __name__ == "__main__":
         "accept": "application/json",
         "authorization": "Token {}".format(token),
     }
+
+    # verify=False (self-signed SSL certificate) - this is insecure/not appropriate
+    # for production use.
     response = requests.get(url, headers=http_headers, verify=False)
     arista6 = response.json()
 
@@ -38,6 +41,8 @@ if __name__ == "__main__":
     arista6["rack"] = {"id": 1}
     print(arista6)
 
+    # verify=False (self-signed SSL certificate) - this is insecure/not appropriate
+    # for production use.
     response = requests.put(
         url, headers=http_headers, data=json.dumps(arista6), verify=False
     )

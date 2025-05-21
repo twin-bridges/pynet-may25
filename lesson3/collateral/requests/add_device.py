@@ -27,6 +27,8 @@ if __name__ == "__main__":
         "status": "active",  # Active
     }
 
+    # verify=False (self-signed SSL certificate) - this is insecure/not appropriate
+    # for production use.
     response = requests.post(
         url, headers=http_headers, data=json.dumps(post_data), verify=False
     )
