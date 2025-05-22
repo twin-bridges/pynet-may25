@@ -2,7 +2,7 @@ import csv
 
 data = [
     {
-        "device_name": 'cisco3,"test"',
+        "device_name": 'cisco3',
         "device_type": "cisco_ios",
         "host": "cisco3.invalid.com",
         "username": "admin",
