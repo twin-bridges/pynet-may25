@@ -5,7 +5,7 @@ a. Using a for-loop verify that each email address contains the '@' symbol. If y
    an email address without the '@' sign, use 'continue' to cease processing on that email
    address.
 
-b. Still inside the for-loop from Part b, add a check for one particular email address. If
+b. Still inside the for-loop from Part a, add a check for one particular email address. If
    this email address is encountered, then break out of the for-loop.
 
 c. At the end of the for-loop print out the email address.
