@@ -1,3 +1,13 @@
+"""
+Create a Python script that finds your current working directory.
+
+From this directory use "pathlib" to create the following directories "tmp_dir1/test1/test2".
+This directory structure should relative to your current working directory.
+
+After you have created this directory structure use the .exists() and is_dir() methods to
+verify this structure now exists and is a directory.
+
+"""
 from pathlib import Path
 from rich import print
 
