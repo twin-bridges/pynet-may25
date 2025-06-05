@@ -10,7 +10,7 @@ all of the "*.textfsm" templates inside of this subdirectory.
 for child in ntc_templates.glob("**/*.textfsm"):
     print(child)
 
-Print out all of the "*.textfsm" files that you find (there will be a lot of them, on the order of
+Print out all of the "*.textfsm" files that you find (there will be a lot of them...on the order of
 900).
 
 Repeat this globstar search and see if you can find any "ciena" templates (note, "ciena" will

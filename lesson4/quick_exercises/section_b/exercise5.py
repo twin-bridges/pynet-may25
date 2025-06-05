@@ -16,7 +16,7 @@ cmd_list = ["ping", "-c", "3", "127.0.0.1"]
 std_out, std_err, returncode = subprocess_runner(cmd_list)
 
 At the end of this function call, the std_out variable should have captured the output of
-the "ping" command execution. This output should have a line similar to the following:
+the ping command execution. This output should contain a line similar to the following:
 
 3 packets transmitted, 3 received, 0% packet loss, time 2048ms
 

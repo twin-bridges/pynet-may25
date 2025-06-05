@@ -1,6 +1,6 @@
 """
 Repeat exercise1 except store your "vmx1" information in a dictionary and pass that
-information into ConnectHandler using the **kwargs technique.
+dictionary into ConnectHandler using the **kwargs technique.
 """
 import os
 from netmiko import ConnectHandler

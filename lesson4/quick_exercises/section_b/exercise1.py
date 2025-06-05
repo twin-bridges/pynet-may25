@@ -1,13 +1,13 @@
 """
-Create a Python script that uses pathlib. The script should create a Path object representing your
-"home" directory (this directory can be determined from the Linux shell by typing 'cd ~').
+Create a Python script that uses pathlib. The script should create a Path object representing
+your "home" directory (this directory can be determined from the Linux shell by typing 'cd ~').
 
 a. Using the home_dir Path object, create a new Path object for "python-libs". This is a
-   subdirectory of "home". Using pathlib verify this directory exists and is a directory.
+   subdirectory of "home". Using pathlib verify this directory exists and is a directory.
 
-b. Using the "python-libs" object created in step a, create a new Path object corresponding to
-   the "snmp_helper.py" file (which exists inside of the "python-libs" directory). Use pathlib
-   to verify this file exists and is a file.
+b. Using the "python-libs" object, create a new Path object corresponding to the "snmp_helper.py"
+   file (which exists inside of the "python-libs" directory). Use pathlib to verify this file
+   exists and is a file.
 
 """
 from pathlib import Path

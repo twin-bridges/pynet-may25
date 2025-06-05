@@ -7,15 +7,15 @@ vmx1:
   username: pyclass
   password: <invalid>
 
-After you have established an SSH connection with this device, use the find_prompt() and
-print the device's prompt to standard output.
+After you have established an SSH connection with this device, use the Netmiko find_prompt()
+method and print out the device's prompt to standard output.
 
 You should NOT hard-code the password in the script, instead read the password in from an
 environment variable.
 
-You can set an environment variable using (using the shell in the lab environment):
+You can set an environment variable (in the lab environment) using the following:
 
-export NETMIKO_PASSWORD=<invalid>         # Provided separately
+export NETMIKO_PASSWORD=fake_password         # Password Provided separately
 
 """
 import os
