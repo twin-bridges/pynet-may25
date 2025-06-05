@@ -21,5 +21,5 @@ if __name__ == "__main__":
     std_out, std_err, ret_code = subprocess_runner(cmd_list, cmd_dir)
 
     for line in std_out.splitlines():
-        if 'lesson2' in line:
+        if "lesson2" in line:
             print(line)
