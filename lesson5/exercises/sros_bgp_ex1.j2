@@ -1,0 +1,7 @@
+/configure router "Base" autonomous-system {{ bgp_as }}
+/configure router "Base" bgp router-id {{ bgp_router_id }}
+/configure router "Base" bgp group "{{ customer_bgp_peer_group }}" type external
+/configure router "Base" bgp group "{{ customer_bgp_peer_group }}" peer-as {{ customer_bgp_as }} 
+/configure router "Base" bgp group "{{ customer_bgp_peer_group }}" family ipv4 true
+/configure router "Base" bgp group "{{ customer_bgp_peer_group }}" family ipv6 true
+/configure router "Base" bgp neighbor "{{ customer_bgp_neighbor_ip }}" group "{{ customer_bgp_peer_group }}"
