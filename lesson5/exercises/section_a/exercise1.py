@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 import argparse
-from rich import print
 import os
+from rich import print
+from netmiko import ConnectHandler
 
 password = os.environ["NETMIKO_PASSWORD"]
 
@@ -20,14 +21,18 @@ parser.add_argument(
 )
 
 cli_args = parser.parse_args()
-print(cli_args)
 
 hostname = cli_args.hostname
 device_type = cli_args.device_type
 username = cli_args.username
 
-nc = ConnectHandler(host=hostname, device_type=device_type, username=username, password=password)
-print(f"{hostname =}")
-print(f"{device_type=}")
-print(f"{username=}")
-print(f"{password=}")
+print()
+print(f"'show version' output for {hostname}")
+print("-" * 50)
+with ConnectHandler(
+    host=hostname, device_type=device_type, username=username, password=password
+) as nc:
+    output = nc.send_command("show version")
+    print(output)
+print("-" * 50)
+print()
