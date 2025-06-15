@@ -5,14 +5,14 @@ env = Environment(undefined=StrictUndefined)
 env.loader = FileSystemLoader([".", "./templates/"])
 
 local_bgp_defs = {
-    "bgp_as": 65000,
-    "bgp_router_id": "1.1.1.1",
+    "bgp_as": 64500,
+    "bgp_router_id": "10.1.1.1",
 }
 cust1_ref_id = "cust422"
 customer_bgp_defs = {
     "customer_reference": cust1_ref_id,
     "customer_bgp_peer_group": f"{cust1_ref_id.upper()}-PEER-GROUP",
-    "customer_bgp_as": 64999,
+    "customer_bgp_as": 64511,
     "customer_bgp_neighbor_ip": "172.31.254.1",
 }
 j2_vars = local_bgp_defs
