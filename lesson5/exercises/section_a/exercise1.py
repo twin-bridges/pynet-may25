@@ -3,8 +3,7 @@ import argparse
 import os
 from rich import print
 from netmiko import ConnectHandler
-
-password = os.environ["NETMIKO_PASSWORD"]
+from getpass import getpass
 
 parser = argparse.ArgumentParser(description="Show Version Utility")
 parser.add_argument("hostname", help="Hostname", action="store", type=str)
@@ -22,6 +21,7 @@ parser.add_argument(
 
 cli_args = parser.parse_args()
 
+password = getpass()
 hostname = cli_args.hostname
 device_type = cli_args.device_type
 username = cli_args.username
