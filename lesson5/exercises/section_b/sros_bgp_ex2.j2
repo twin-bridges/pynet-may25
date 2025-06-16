@@ -1,4 +1,4 @@
-/configure router "Base" autonomous-system {{ bgp_as }}
+/configure router "Base" autonomous-system {{ bgp_local_as }}
 /configure router "Base" bgp router-id {{ bgp_router_id }}
 /configure router "Base" bgp group "{{ customer_bgp_peer_group }}" type external
 /configure router "Base" bgp group "{{ customer_bgp_peer_group }}" peer-as {{ customer_bgp_as }}
