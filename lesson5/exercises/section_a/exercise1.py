@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 import argparse
-import os
 from rich import print
 from netmiko import ConnectHandler
 from getpass import getpass
