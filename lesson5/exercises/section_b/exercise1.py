@@ -1,11 +1,12 @@
 from jinja2 import FileSystemLoader, StrictUndefined
 from jinja2 import Environment
+from rich import print
 
 env = Environment(undefined=StrictUndefined)
 env.loader = FileSystemLoader([".", "./templates/"])
 
 local_bgp_defs = {
-    "bgp_as": 64500,
+    "bgp_local_as": 64500,
     "bgp_router_id": "10.1.1.1",
 }
 cust1_ref_id = "cust422"
@@ -21,4 +22,6 @@ j2_vars.update(customer_bgp_defs)
 template_file = "sros_bgp_ex1.j2"
 template = env.get_template(template_file)
 output = template.render(**j2_vars)
+print()
 print(output)
+print()
