@@ -4,15 +4,11 @@ django.setup()
 
 from net_db.models import DNSServer  # noqa
 
-# cf1 = DNSServer(
-#    ip_addr="1.1.1.1", hostname="one.one.one.one", provider="Cloudflare"
-# )
-# cf1.save()
-#
-# cf2 = DNSServer(
-#    ip_addr="1.0.0.1", hostname="one.one.one.one", provider="Cloudflare"
-# )
-# cf2.save()
+cf1 = DNSServer(ip_addr="1.1.1.1", hostname="one.one.one.one", provider="Cloudflare")
+cf1.save()
+
+cf2 = DNSServer(ip_addr="1.0.0.1", hostname="one.one.one.one", provider="Cloudflare")
+cf2.save()
 
 google1 = DNSServer(ip_addr="8.8.8.8", hostname="dns.google", provider="Google")
 google1.save()
