@@ -19,7 +19,7 @@ customer_bgp_defs = {
 j2_vars = local_bgp_defs
 j2_vars.update(customer_bgp_defs)
 
-template_file = "sros_bgp_ex1.j2"
+template_file = "sros_bgp_ex4.j2"
 template = env.get_template(template_file)
 output = template.render(**j2_vars)
 print()
