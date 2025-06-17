@@ -9,7 +9,7 @@ In [3]: my_xml
 Out[3]: <lxml.etree._ElementTree at 0x7fc57cbfdc80>
 ```
 
-### a. After you have executed etree.parse() use .getroot() to find the root of the XML tree. What 'tag' is the root of this XML tree?
+### a. After you have executed etree.parse() use .getroot() to find the root of the XML tree. Which 'tag' is at the root of this XML tree?
 
 ```python
 In [5]: xml_root = my_xml.getroot()
@@ -18,7 +18,7 @@ In [6]: xml_root.tag
 Out[6]: 'rpc-reply'
 ```
 
-### b. Use tostring() on the root of the tree, to print out the entire XML tree. You should use .decode() to convert this from a byte string to an internal Python string (unicode string).
+### b. Use .tostring() on the root of the XML tree, to print out the entire XML tree. You should use .decode() to convert this from a byte string to an internal Python string (unicode string).
 
 ```python
 In [10]: print(etree.tostring(xml_root).decode())
@@ -60,7 +60,7 @@ junos:style="normal">
 </rpc-reply>
 ```
 
-### c. Loop over xml_root using .getchildren and print out the two nodes (tag names) of the two direct children.
+### c. Loop over the xml_root using .getchildren and print out the two nodes (tag names) of the two direct children.
 
 ```python
 In [12]: for child in xml_root.getchildren():
